@@ -299,7 +299,8 @@ const initPage = async () => {
 function initApp(){
     initPage()
     const select = document.getElementById("selectMenu")
-    select.addEventListener("change", selectMenuChangeEventHandler)
+    select.addEventListener("change", selectMenuChangeEventHandler())
 }
 
-document.addEventListener("DOMContentLoaded", initApp)
+
+document.addEventListener("DOMContentLoaded", initApp())
